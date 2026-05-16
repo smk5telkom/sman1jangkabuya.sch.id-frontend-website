@@ -1,5 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  nitro: {
+    routeRules: {
+      '/api/announcements/**': {
+        proxy: 'http://localhost:3000/announcements/**',
+      },
+      '/api/announcements/slug': {
+        proxy: 'http://localhost:3000/announcements/slug'
+      }
+    },
+  },
   compatibilityDate: "2025-07-15",
   devtools: { enabled: false },
   plugins: [

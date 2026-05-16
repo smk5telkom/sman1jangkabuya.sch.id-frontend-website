@@ -4,15 +4,15 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 align-self-center p-static order-2 text-center">
-            <h1 class="text-dark font-weight-bold text-8">Pendaftaran Alumni</h1>
-            <span class="sub-title text-dark">Mari Jalin Silaturahmi dan Bangun Relasi Lintas Generasi</span>
+            <h1 class="text-white font-weight-bold text-8">Pendaftaran Alumni</h1>
+            <span class="sub-title text-white">Mari Jalin Silaturahmi dan Bangun Relasi Lintas Generasi</span>
           </div>
-          <div class="col-md-12 align-self-center order-1">
+          <!-- <div class="col-md-12 align-self-center order-1">
             <ul class="breadcrumb d-block text-center">
               <li><NuxtLink to="/">Beranda</NuxtLink></li>
               <li class="active">Pendaftaran Alumni</li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
