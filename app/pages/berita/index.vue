@@ -98,8 +98,13 @@ function changePage(page: number) {
         <h4>Memuat berita...</h4>
       </div>
 
-      <div v-else-if="error" class="alert alert-danger">
+      <!-- <div v-else-if="error" class="alert alert-danger">
         Gagal mengambil data berita
+      </div> -->
+
+      <div v-else-if="error">
+        <p>Gagal mengambil data berits.</p>
+        <pre>{{ error }}</pre>
       </div>
 
       <div v-else class="row">
