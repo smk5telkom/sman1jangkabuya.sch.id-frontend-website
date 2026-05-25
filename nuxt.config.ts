@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  devServer: {
+    port: 3001
+  },
   nitro: {
     routeRules: {
       '/api/announcements/**': {
@@ -7,6 +10,12 @@ export default defineNuxtConfig({
       },
       '/api/announcements/slug': {
         proxy: 'http://localhost:3000/announcements/slug'
+      },
+      '/api/posts/**': {
+        proxy: 'http://localhost:3000/posts/**',
+      },
+      '/api/posts/slug': {
+        proxy: 'http://localhost:3000/posts/slug'
       }
     },
   },

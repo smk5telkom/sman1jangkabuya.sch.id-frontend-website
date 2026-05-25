@@ -27,7 +27,7 @@
           </h2>
           <blockquote class="custom-blockquote blockquote-primary text-center bg-color-light-scale-1 p-5 rounded border-0 box-shadow-2">
             <p class="mb-0 text-5 font-weight-semibold text-color-dark line-height-7">
-              "Mewujudkan Generasi yang Cerdas, Berakhlak Mulia, Berprestasi, dan Berwawasan Lingkungan Berlandaskan Iman dan Taqwa."
+              “Mewujudkan siswa yang berprestasi, berakhlak mulia dan berwawasan global”
             </p>
           </blockquote>
         </div>
@@ -42,23 +42,27 @@
               <ul class="list list-icons list-icons-lg list-primary text-4 line-height-7">
                 <li class="mb-3">
                   <i class="fas fa-check-circle mt-1"></i> 
-                  Menyelenggarakan pembelajaran yang aktif, inovatif, kreatif, efektif, dan menyenangkan (PAIKEM).
+                  Meningkatkan kualitas pembelajaran dengan menerapkan pendekatan pembelajaran mendalam secara kontinue
                 </li>
                 <li class="mb-3">
                   <i class="fas fa-check-circle mt-1"></i> 
-                  Menumbuhkembangkan karakter peserta didik yang religius, jujur, disiplin, dan bertanggung jawab.
+                  Meningkatkan kedisiplinan dalam proses belajar mengajar
                 </li>
                 <li class="mb-3">
                   <i class="fas fa-check-circle mt-1"></i> 
-                  Meningkatkan prestasi akademik dan non-akademik melalui bimbingan dan kegiatan ekstrakurikuler yang terprogram.
+                  Meningkatkan rasa keimanan dan ketakwaan melalui pengamalan ajaran agama
                 </li>
                 <li class="mb-3">
                   <i class="fas fa-check-circle mt-1"></i> 
-                  Mewujudkan lingkungan sekolah yang bersih, asri, aman, dan nyaman sebagai tempat belajar.
+                  Menciptakan lingkungan sekolah yang asri
                 </li>
                 <li class="mb-3">
                   <i class="fas fa-check-circle mt-1"></i> 
-                  Membekali peserta didik dengan keterampilan teknologi informasi dan komunikasi untuk menghadapi era globalisasi.
+                  Meningkatkan rasa peduli terhadap lingkungan sekolah
+                </li>
+                <li class="mb-3">
+                  <i class="fas fa-check-circle mt-1"></i> 
+                  Memotivasi dan membimbing seluruh siswa untuk mengembangkan potensi secara optimal
                 </li>
               </ul>
             </div>
@@ -72,8 +76,7 @@
 </template>
 
 <style scoped>
-/* Sedikit styling tambahan khusus halaman ini agar Visi terlihat lebih elegan */
 .custom-blockquote {
-  border-left: 5px solid #0088cc !important; /* Sesuaikan warna biru dengan tema primary Porto */
+  border-left: 5px solid #0088cc !important;
 }
 </style>

@@ -164,19 +164,18 @@ function truncate(text: string, length = 50) {
 </template>
 
 <style scoped>
-/* Styling khusus untuk kotak tanggal pengumuman agar terlihat menonjol */
 .date-box {
   min-width: 80px;
   text-align: center;
 }
-/* Memastikan elemen teks dalam date-box tidak berantakan */
+
 .date-box .day {
   letter-spacing: -1px;
 }
 
 .announcement-content {
   display: -webkit-box;
-  -webkit-line-clamp: 1; /* jumlah baris */
+  -webkit-line-clamp: 1; 
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

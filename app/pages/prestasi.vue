@@ -90,7 +90,6 @@
 </template>
 
 <style scoped>
-/* Sedikit tambahan efek hover biar kartu prestasinya agak naik saat disorot mouse */
 .hover-effect-1 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

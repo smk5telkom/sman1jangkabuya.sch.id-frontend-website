@@ -21,11 +21,7 @@ onMounted(async () => {
       setTimeout(() => {
         // Inisialisasi script tema Porto
         window.$(document).trigger('theme.init')
-        
-        // Trik tambahan: paksa browser 'merasa' layarnya di-resize
-        // Ini akan memicu script Porto untuk menghitung ulang lebar kotak biru word-rotator
-        // window.dispatchEvent(new Event('resize'))
-      }, 300) // Waktu tunggu sedikit ditambah biar lebih aman
+      }, 300)
     })
   }
 })
@@ -38,7 +34,7 @@ onMounted(async () => {
     data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}"
   >
     <div class="header-body border-color-primary border-bottom-0">
-      <div class="header-top header-top-simple-border-bottom bg-primary-subtle">
+      <!-- <div class="header-top header-top-simple-border-bottom bg-primary-subtle">
         <div class="container">
           <div class="header-row py-2">
             <div class="header-column justify-content-end">
@@ -63,7 +59,7 @@ onMounted(async () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="header-container container">
         <div class="header-row">
           <div class="header-column">
@@ -71,12 +67,9 @@ onMounted(async () => {
               <div class="header-logo">
                 <NuxtLink to="/">
                   <img
-                    alt="Porto"
-                    width="100"
-                    height="48"
-                    data-sticky-width="82"
-                    data-sticky-height="40"
-                    src="/img/logo-default-slim.png"
+                    alt="Logo SMAN 1 Jangka Buya"
+                    src="/img/sekolah/logo.png" 
+                    class="logo-sekolah"
                   />
                 </NuxtLink>
               </div>
@@ -156,3 +149,21 @@ onMounted(async () => {
     </div>
   </header>
 </template>
+
+<style scoped>
+/* CSS Tambahan untuk Logo Sekolah */
+.logo-sekolah {
+  /* Atur tinggi maksimum logo agar pas di header */
+  max-height: 60px; 
+  /* Biarkan lebar menyesuaikan otomatis agar rasio tetap terjaga (tidak gepeng) */
+  width: auto; 
+  /* Opsional: tambah sedikit padding jika perlu */
+  padding: 5px 0; 
+  transition: ease all 0.3s;
+}
+
+/* Mengatur ukuran logo saat header dalam posisi sticky (mengecil) */
+#header.header-effect-shrink .header-body.sticky-header .logo-sekolah {
+  max-height: 50px;
+}
+</style>

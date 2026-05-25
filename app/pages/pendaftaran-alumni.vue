@@ -22,7 +22,7 @@
         
         <div class="col-lg-8 mb-5 mb-lg-0">
           <h2 class="font-weight-bold text-6 mb-3">Formulir Data Alumni</h2>
-          <p class="mb-4">Mohon isi data diri Anda melalui formulir di bawah ini. Data ini akan disimpan dengan aman dan digunakan khusus untuk keperluan pendataan alumni SMAN 1 Meurede.</p>
+          <p class="mb-4">Mohon isi data diri Anda melalui formulir di bawah ini. Data ini akan disimpan dengan aman dan digunakan khusus untuk keperluan pendataan alumni SMAN 1 Jangka Buya</p>
 
           <div class="google-form-wrapper box-shadow-2 rounded border border-color-light">
             <iframe 
@@ -43,19 +43,19 @@
             <ul class="list list-icons list-primary mb-0">
               <li class="mb-3">
                 <i class="fas fa-check"></i> 
-                <strong>Jejaring Profesional:</strong> Terhubung dengan kakak dan adik tingkat dari berbagai profesi.
+                <strong>Jejaring Profesional:</strong> Terhubung dengan kakak dan adik tingkat dari berbagai profesi
               </li>
               <li class="mb-3">
                 <i class="fas fa-check"></i> 
-                <strong>Info Lowongan Kerja:</strong> Mendapatkan informasi peluang karir khusus untuk jejaring alumni.
+                <strong>Info Lowongan Kerja:</strong> Mendapatkan informasi peluang karir khusus untuk jejaring alumni
               </li>
               <li class="mb-3">
                 <i class="fas fa-check"></i> 
-                <strong>Agenda Reuni:</strong> Menjadi orang pertama yang diundang dalam acara reuni akbar maupun kegiatan sekolah.
+                <strong>Agenda Reuni:</strong> Menjadi orang pertama yang diundang dalam acara reuni akbar maupun kegiatan sekolah
               </li>
               <li>
                 <i class="fas fa-check"></i> 
-                <strong>Sumbangsih Almamater:</strong> Membantu sekolah dalam tracer study untuk akreditasi SMAN 1 Meurede.
+                <strong>Sumbangsih Almamater:</strong> Membantu sekolah dalam tracer study untuk akreditasi SMAN 1 Jangka Buya
               </li>
             </ul>
           </div>
@@ -67,11 +67,9 @@
 </template>
 
 <style scoped>
-/* Styling agar Google Form menyatu dengan baik di dalam web */
 .google-form-wrapper {
   overflow: hidden;
   background-color: #f9f9f9;
-  /* Sesuaikan tinggi ini jika form-nya kepotong di bagian bawah */
   min-height: 800px; 
 }
 </style>

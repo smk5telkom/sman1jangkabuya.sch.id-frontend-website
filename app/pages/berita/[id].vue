@@ -46,7 +46,7 @@
               </p>
 
               <p class="text-4 line-height-7">
-                SMAN 1 Meurede terus berkomitmen untuk memberikan layanan informasi yang cepat dan transparan. Kegiatan-kegiatan unggulan, pencapaian siswa, hingga informasi akademik harian akan terus diperbarui melalui portal berita ini.
+                SMAN 1 J terus berkomitmen untuk memberikan layanan informasi yang cepat dan transparan. Kegiatan-kegiatan unggulan, pencapaian siswa, hingga informasi akademik harian akan terus diperbarui melalui portal berita ini.
               </p>
 
               <div class="post-block mt-5 post-share">
@@ -124,15 +124,11 @@
 <script setup>
 import { useRoute } from 'vue-router'
 
-// Memanggil useRoute untuk menangkap parameter ID dari URL
 const route = useRoute()
 
-// Saat nanti dihubungkan ke API, kamu bisa menarik data berdasarkan route.params.id di sini
-// Contoh: const { data: artikel } = await useFetch(`https://api.sman1meurede.sch.id/berita/${route.params.id}`)
 </script>
 
 <style scoped>
-/* Agar font di paragraf berita lebih enak dibaca dan tidak terlalu rapat */
 .post-content p {
   margin-bottom: 1.5rem;
 }

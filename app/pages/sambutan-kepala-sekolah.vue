@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-md-12 align-self-center p-static order-2 text-center">
             <h1 class="text-light font-weight-bold text-8">Sambutan Kepala Sekolah</h1>
-            <span class="sub-title text-light">Pesan dan Harapan dari Pimpinan SMAN 1 Meurede</span>
+            <span class="sub-title text-light">Pesan dan Harapan dari Pimpinan SMAN 1 Jangka Buya</span>
           </div>
           <!-- <div class="col-md-12 align-self-center order-1">
             <ul class="breadcrumb d-block text-center">
@@ -22,9 +22,9 @@
       <div class="row align-items-center">
         
         <div class="col-lg-4 mb-5 mb-lg-0 text-center">
-          <img src="/img/tes.jpeg" class="img-fluid rounded box-shadow-3 mb-4" alt="Kepala SMAN 1 Meurede" style="max-width: 300px; object-fit: cover; border-radius: 8px;" />
-          <h4 class="text-color-dark font-weight-bold mb-0">Drs. H. Fulan, M.Pd.</h4>
-          <p class="text-3 mb-0 text-muted">Kepala SMAN 1 Meurede</p>
+          <img src="/img/sekolah/kepsek.jpg" class="img-fluid rounded box-shadow-3 mb-4" alt="Kepala SMAN 1 Jangka Buya" style="max-width: 300px; object-fit: cover; border-radius: 8px;" />
+          <h4 class="text-color-dark font-weight-bold mb-0">Alvi Syahril B, S.Pd., M.Pd</h4>
+          <p class="text-3 mb-0 text-muted">Kepala SMAN 1 Jangka Buya</p>
         </div>
 
         <div class="col-lg-8">
@@ -38,7 +38,7 @@
           </p>
           
           <p>
-            Di era digital dan globalisasi saat ini, website sekolah menjadi sarana vital sebagai media informasi, komunikasi, dan silaturahmi antara sekolah dengan peserta didik, orang tua/wali murid, alumni, dan masyarakat luas. Kami menyadari bahwa SMAN 1 Meurede harus terus berinovasi dan mengikuti perkembangan teknologi informasi.
+            Di era digital dan globalisasi saat ini, website sekolah menjadi sarana vital sebagai media informasi, komunikasi, dan silaturahmi antara sekolah dengan peserta didik, orang tua/wali murid, alumni, dan masyarakat luas. Kami menyadari bahwa SMAN 1 Jangka Buya harus terus berinovasi dan mengikuti perkembangan teknologi informasi.
           </p>
           
           <p>
@@ -46,7 +46,7 @@
           </p>
           
           <p>
-            Saya mengucapkan terima kasih kepada seluruh pihak yang telah mendukung pembuatan dan pengembangan website ini. Masukan dan saran yang konstruktif sangat kami harapkan demi kemajuan SMAN 1 Meurede di masa mendatang. Mari bersama-sama kita wujudkan sekolah yang lebih baik.
+            Saya mengucapkan terima kasih kepada seluruh pihak yang telah mendukung pembuatan dan pengembangan website ini. Masukan dan saran yang konstruktif sangat kami harapkan demi kemajuan SMAN 1 Jangka Buya di masa mendatang. Mari bersama-sama kita wujudkan sekolah yang lebih baik.
           </p>
 
           <p class="mb-0 font-weight-semibold text-dark mt-4">
@@ -54,7 +54,7 @@
           </p>
 
           <div class="mt-4 pt-2">
-            <h5 class="text-color-dark font-weight-extra-bold mb-0">Drs. H. Fulan, M.Pd.</h5>
+            <h5 class="text-color-dark font-weight-extra-bold mb-0">Alvi Syahril B, S.Pd., M.Pd</h5>
             <span class="text-2">Kepala Sekolah</span>
           </div>
         </div>
