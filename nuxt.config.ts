@@ -17,6 +17,9 @@ export default defineNuxtConfig({
       },
       '/api/posts/slug': {
         proxy: 'http://localhost:3000/posts/slug'
+      },
+      '/api/achievements/': {
+        proxy: 'http://localhost:3000/achievement/'
       }
     },
   },

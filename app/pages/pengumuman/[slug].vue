@@ -31,7 +31,11 @@ function formatMonth(date: string) {
         <div class="row">
           <div class="col-md-12 align-self-center p-static order-2 text-center">
             <h1 class="text-light font-weight-bold text-8">{{ announcement.title }}</h1>
-            <span class="sub-title text-light">{{ formatDay(announcement.createdAt) + ' ' + formatMonth(announcement.createdAt)}}</span>
+            <span v-if="announcement?.createdAt" class="sub-title text-light">
+              <i class="far fa-user me-1"></i> {{ announcement.postBy?.name }} &nbsp;|&nbsp; 
+              <i class="far fa-calendar-alt me-1"></i> {{ formatDay(announcement.createdAt) }} {{ formatMonth(announcement.createdAt) }}
+            </span>
+            <!-- <span class="sub-title text-light">{{ formatDay(announcement.createdAt) + ' ' + formatMonth(announcement.createdAt)}}</span> -->
           </div>
           <!-- <div class="col-md-12 align-self-center order-1">
             <ul class="breadcrumb d-block text-center">
