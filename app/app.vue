@@ -4,6 +4,10 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 
+const isAdminPage = computed(() =>
+  route.path.startsWith('/admin')
+)
+
 watch(() => route.path, async () => {
   await nextTick()
   
@@ -19,10 +23,8 @@ watch(() => route.path, async () => {
 
 <template>
   <div>
-    <!--    <NuxtRouteAnnouncer />-->
-    <!-- <NuxtWelcome /> -->
-    <Header />
+    <Header v-if="!isAdminPage" />
     <NuxtPage />
-    <Footer />
+    <Footer v-if="!isAdminPage" />
   </div>
 </template>
