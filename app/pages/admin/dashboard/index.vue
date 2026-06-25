@@ -9,9 +9,47 @@ const { apiRequest } = useApi()
 const router = useRouter()
 const route = useRoute()
 const username = ref('Loading...')
-const posts = ref([])
+// const posts = ref([])
+// let posts = null;
+const posts = ref(0)
+const announcements = ref(0)
+const achievement = ref(0)
+// const sidebarOpen = ref(false)
 
-onMounted(() => {
+const totalPosts = async () => {
+    try {
+        const data = await apiRequest('/posts', {
+            method: 'GET'
+        })
+        posts.value = data.length
+    } catch(err) {
+        console.log(err)
+    }
+}
+
+const totalAnnouncements = async () => {
+    try {
+        const data = await apiRequest('/announcements', {
+            method: 'GET'
+        })
+        announcements.value = data.length
+    } catch(err) {
+        console.log(err)
+    }
+}
+
+const totalAchievements = async () => {
+    try {
+        const data = await apiRequest('/achievement', {
+            method: 'GET'
+        })
+        achievement.value = data.length
+    } catch(err) {
+        console.log(err)
+    }
+}
+
+onMounted(async () => {
     const token = localStorage.getItem('token')
     
     if (!token) {
@@ -21,25 +59,11 @@ onMounted(() => {
         const data = dapatkanPayloadJWT(token);
         username.value = data.username;
     }
+
+    await totalPosts();
+    await totalAnnouncements();
+    await totalAchievements();
 })
-
-const potongTeks = (teks, batasMaksimal = 5) => {
-  if (!teks) return ''
-  
-  if (teks.length > batasMaksimal) {
-    return teks.substring(0, batasMaksimal) + '...'
-  }
-  
-  return teks
-}
-
-function formatDate(date) {
-  return new Date(date).toLocaleDateString('id-ID', {
-    day: '2-digit',
-    month: 'long',
-    year: 'numeric'
-  })
-}
 
 function dapatkanPayloadJWT(token) {
     try {
@@ -65,6 +89,8 @@ const isActive = (path) => {
 }
 
 const handleLogout = () => {
+    const userToken = useCookie('refresh_token')
+    userToken.value = null;
     localStorage.removeItem('token')
     alert('Berhasil Logout!')
     
@@ -74,8 +100,20 @@ const handleLogout = () => {
 
 <template>
     <div class="d-flex min-vh-100 bg-light">
-        
+        <!-- <nav class="navbar navbar-light bg-white d-md-none shadow-sm">
+            <div class="container-fluid">
+                <button
+                class="btn btn-outline-primary"
+                @click="sidebarOpen = !sidebarOpen"
+                >
+                ☰
+                </button>
+
+                <span class="fw-bold">SISekolah</span>
+            </div>
+        </nav> -->
         <aside class="sidebar bg-white shadow-sm d-none d-md-flex flex-column">
+        <!-- <aside class="sidebar-mobile bg-white shadow" :class="{ show: sidebarOpen }"> -->
             <div class="p-4 text-center border-bottom">
                 <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="Logo" width="40" class="mb-2">
                 <h5 class="fw-bold text-primary mb-0">SISekolah</h5>
@@ -147,9 +185,34 @@ const handleLogout = () => {
                     </div>
                 </div>
             </nav>
-
             <div class="container-fluid p-4">
                 <h4 class="mb-4 fw-bold">Overview</h4>
+                <div class="row g-3 mb-4">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body">
+                                <h6 class="text-muted mb-2">Total Berita</h6>
+                                <h2 class="mb-0 fw-bold">{{ posts }}</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body">
+                                <h6 class="text-muted mb-2">Total Pengumuman</h6>
+                                <h2 class="mb-0 fw-bold">{{ announcements }}</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body">
+                                <h6 class="text-muted mb-2">Total Prestasi</h6>
+                                <h2 class="mb-0 fw-bold">{{ achievement }}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
@@ -169,6 +232,28 @@ const handleLogout = () => {
 
 .main-content {
     width: calc(100% - 260px);
+}
+
+.sidebar-mobile {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100vh;
+  z-index: 1050;
+  transition: 0.3s;
+}
+
+.sidebar-mobile.show {
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .sidebar-mobile {
+    position: static;
+    left: 0;
+    width: 260px;
+  }
 }
 
 @media (max-width: 768px) {
