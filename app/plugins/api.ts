@@ -1,6 +1,7 @@
 export default defineNuxtPlugin(() => {
   const api = $fetch.create({
-    baseURL: 'http://localhost:3000',
+    // baseURL: 'http://localhost:3000',
+    baseURL: process.env.BACKEND_URL || 'http://localhost:3000',
 
     credentials: 'include', // penting agar cookie refresh ikut dikirim
 
