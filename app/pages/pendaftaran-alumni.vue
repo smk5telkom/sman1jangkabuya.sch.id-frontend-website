@@ -1,3 +1,10 @@
+<script setup>
+useSeoMeta({
+  title: "Pendaftaran Alumni - Sman 1 Jangka Buya",
+  description: "Pendaftaran Alumni - Sman 1 Jangka Buya",
+})
+</script>
+
 <template>
   <div role="main" class="main">
     <section class="page-header page-header-modern bg-color-light-scale-1 page-header-md">

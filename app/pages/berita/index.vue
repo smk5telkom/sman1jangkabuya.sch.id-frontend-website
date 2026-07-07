@@ -10,6 +10,10 @@ import { computed, ref } from 'vue'
 //   createdAt: string
 //   postById: number
 // }
+useSeoMeta({
+  title: "Berita Sekolah - Sman 1 Jangka Buya",
+  description: "Berita Sekolah - Sman 1 Jangka Buya",
+})
 
 const currentPage = ref(1)
 const perPage = 6

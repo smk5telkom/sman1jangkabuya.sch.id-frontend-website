@@ -12,6 +12,18 @@ const { data: announcement, pending, error } = await useFetch(
   }
 )
 
+useSeoMeta({
+  title: () =>
+    announcement.value?.title
+      ? `${announcement.value.title} - SMAN 1 Jangka Buya`
+      : "Pengumuman Sekolah - SMAN 1 Jangka Buya",
+
+  description: () =>
+    announcement.value?.content
+      ? announcement.value.content.substring(0, 160)
+      : "Pengumuman Sekolah - SMAN 1 Jangka Buya",
+})
+
 function formatDay(date: string) {
   return new Date(date).getDate().toString().padStart(2, '0')
 }

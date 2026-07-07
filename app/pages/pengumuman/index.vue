@@ -1,4 +1,9 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: "Pengumuman Sekolah - Sman 1 Jangka Buya",
+  description: "Pengumuman Sekolah - Sman 1 Jangka Buya",
+})
+
 const currentPage = ref(1)
 const perPage = 3
 

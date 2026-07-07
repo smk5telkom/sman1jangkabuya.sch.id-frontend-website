@@ -1,25 +1,30 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-   ssr: true,
+  runtimeConfig: {
+    public: {
+      baseURL: process.env.BACKEND_URL || 'http://localhost:3000',
+    },
+  },
+  ssr: true,
   devServer: {
     port: 3001
   },
   nitro: {
     routeRules: {
       '/api/announcements/**': {
-        proxy: 'http://localhost:3000/announcements/**',
+        proxy: `${process.env.BACKEND_URL}/announcements/**`,
       },
       '/api/announcements/slug': {
-        proxy: 'http://localhost:3000/announcements/slug'
+        proxy: `${process.env.BACKEND_URL}/announcements/slug`
       },
       '/api/posts/**': {
-        proxy: 'http://localhost:3000/posts/**',
+        proxy: `${process.env.BACKEND_URL}/posts/**`,
       },
       '/api/posts/slug': {
-        proxy: 'http://localhost:3000/posts/slug'
+        proxy: `${process.env.BACKEND_URL}/posts/slug`
       },
       '/api/achievements/': {
-        proxy: 'http://localhost:3000/achievement/'
+        proxy: `${process.env.BACKEND_URL}/achievements/`
       }
     },
   },
@@ -32,12 +37,12 @@ export default defineNuxtConfig({
     head: {
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { name: "keywords", content: "WebSite Template" },
+        { name: "keywords", content: "Sman 1 Jangka Buya" },
         {
           name: "description",
-          content: "Porto - Multipurpose Website Template",
+          content: "Sman 1 Jangka Buya",
         },
-        { name: "author", content: "zilfa.me" },
+        { name: "author", content: "smkn5telkom.sch.id" },
         {
           name: "viewport",
           content:
@@ -45,8 +50,8 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-        { rel: "shortcut icon", href: "img/favicon.ico", type: "image/x-icon" },
-        { rel: "apple-touch-icon", href: "img/apple-touch-icon.png" },
+        { rel: "shortcut icon", href: "img/sekolah/logo.png", type: "image/x-icon" },
+        { rel: "apple-touch-icon", href: "img/sekolah/logo.png" },
         {
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap",

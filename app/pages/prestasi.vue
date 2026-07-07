@@ -1,5 +1,11 @@
+
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+
+useSeoMeta({
+  title: "Prestasi Siswa - Sman 1 Jangka Buya",
+  description: "Prestasi Siswa - Sman 1 Jangka Buya",
+})
 
 const { data: achievements, pending, error } = await useFetch(
   '/api/achievements/',
