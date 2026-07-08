@@ -11,7 +11,7 @@ const handleLogin = async () => {
     isLoading.value = true
 
     try {
-        const data = await $fetch('http://localhost:3000/auth/login', {
+        const data = await $fetch(`${process.env.BACKEND_URL}/auth/login`, {
             method: 'POST',
             credentials: 'include',
             body: {
