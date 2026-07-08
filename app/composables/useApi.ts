@@ -1,4 +1,6 @@
 export const useApi = () => {
+  const config = useRuntimeConfig()
+  const api = config.public.backendUrl
   const { $api } = useNuxtApp()
 
   const apiRequest = async (url: string, options: any = {}) => {
@@ -7,7 +9,7 @@ export const useApi = () => {
     } catch (err: any) {
       if (err?.status === 401) {
         const refresh = await $fetch('/auth/refresh', {
-          baseURL: 'http://localhost:3000',
+          baseURL: api,
           method: 'GET',
           credentials: 'include'
         })

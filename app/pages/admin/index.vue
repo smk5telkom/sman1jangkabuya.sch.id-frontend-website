@@ -1,7 +1,8 @@
 <script setup>
 import { ref } from 'vue'
 // import { useRouter } from 'vue-router'
-
+const config = useRuntimeConfig()
+const api = config.public.backendUrl
 const email = ref('')
 const password = ref('')
 const isLoading = ref(false)
@@ -11,7 +12,7 @@ const handleLogin = async () => {
     isLoading.value = true
 
     try {
-        const data = await $fetch(`${process.env.BACKEND_URL}/auth/login`, {
+        const data = await $fetch(`${api}/auth/login`, {
             method: 'POST',
             credentials: 'include',
             body: {

@@ -2,12 +2,12 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      baseURL: process.env.BACKEND_URL || 'http://localhost:3000',
+      backendUrl: process.env.BACKEND_URL || 'http://localhost:3000',
     },
   },
   ssr: true,
   devServer: {
-    port: 3001
+    port: Number(process.env.PORT) || 3001,
   },
   nitro: {
     routeRules: {
