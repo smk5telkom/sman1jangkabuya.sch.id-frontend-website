@@ -24,7 +24,7 @@ export default defineNuxtConfig({
         proxy: `${process.env.BACKEND_URL}/posts/slug`
       },
       '/api/achievements/': {
-        proxy: `${process.env.BACKEND_URL}/achievements/`
+        proxy: `${process.env.BACKEND_URL}/achievement/`
       }
     },
   },
