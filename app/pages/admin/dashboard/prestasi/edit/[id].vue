@@ -5,6 +5,9 @@ const { apiRequest } = useApi()
 // import { useApi } from '~/composables/useApi'
 // const { apiRequest } = useApi()
 
+const config = useRuntimeConfig()
+const backendUrl = config.public.backendUrl
+
 const router = useRouter()
 const route = useRoute()
 const username = ref('Loading...')
@@ -177,6 +180,17 @@ const handleLogout = () => {
                         Prestasi
                         </NuxtLink>
                     </li>
+                    <li class="nav-item mb-2">
+                        <NuxtLink
+                        to="/admin/dashboard/alumni"
+                        class="nav-link rounded"
+                        :class="isActive('/admin/dashboard/alumni')
+                            ? 'bg-primary text-white'
+                            : 'text-secondary hover-bg'"
+                        >
+                        Alumni
+                        </NuxtLink>
+                    </li>
                 </ul>
             </div>
         </aside>
@@ -215,7 +229,7 @@ const handleLogout = () => {
                         <form @submit.prevent="submitEdit(achievements.id)">
                             <div class="mb-3">
                                 <label class="form-label">Gambar Saat Ini:</label>
-                                <img :src="`http://localhost:3000${achievements.imageUrl}`" style="max-width: 200px" class="img-thumbnail" alt="thumbnail">
+                                <img :src="`${backendUrl}${achievements.imageUrl}`" style="max-width: 200px" class="img-thumbnail" alt="thumbnail">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Ganti Gambar</label>

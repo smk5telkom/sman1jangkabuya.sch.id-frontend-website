@@ -37,9 +37,11 @@ function formatMonth(date: string) {
   }).toUpperCase()
 }
 
+const config = useRuntimeConfig()
+
 function getImageUrl(path: string) {
   if (!path) return ''
-  return `http://localhost:3000${path}`
+  return `${config.public.backendUrl}${path}`
 }
 </script>
 

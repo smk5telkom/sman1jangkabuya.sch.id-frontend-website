@@ -149,6 +149,17 @@ const handleLogout = () => {
                         Prestasi
                         </NuxtLink>
                     </li>
+                    <li class="nav-item mb-2">
+                        <NuxtLink
+                        to="/admin/dashboard/alumni"
+                        class="nav-link rounded"
+                        :class="isActive('/admin/dashboard/alumni')
+                            ? 'bg-primary text-white'
+                            : 'text-secondary hover-bg'"
+                        >
+                        Alumni
+                        </NuxtLink>
+                    </li>
                 </ul>
             </div>
         </aside>

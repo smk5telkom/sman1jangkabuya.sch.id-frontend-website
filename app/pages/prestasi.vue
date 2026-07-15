@@ -15,9 +15,11 @@ const { data: achievements, pending, error } = await useFetch(
   }
 )
 
+const config = useRuntimeConfig()
+
 function getImageUrl(path: string) {
   if (!path) return ''
-  return `http://localhost:3000${path}`
+  return `${config.public.backendUrl}${path}`
 }
 
 function getBadgeColor(level: string) {

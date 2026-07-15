@@ -1,3 +1,5 @@
+import process from "node:process";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   runtimeConfig: {
@@ -25,6 +27,9 @@ export default defineNuxtConfig({
       },
       '/api/achievements/': {
         proxy: `${process.env.BACKEND_URL}/achievement/`
+      },
+      '/api/alumni/': {
+        proxy: `${process.env.BACKEND_URL}/alumni/`
       }
     },
   },

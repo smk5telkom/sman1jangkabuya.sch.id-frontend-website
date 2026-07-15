@@ -47,10 +47,12 @@ function shortContent(text: string, max = 120) {
   return text.slice(0, max) + '...'
 }
 
+const config = useRuntimeConfig()
+
 function imagePost(image: string | null) {
   if (!image) return '/img/tes.jpeg'
 
-  return `http://localhost:3000${image}`
+  return `${config.public.backendUrl}${image}`
 }
 
 
