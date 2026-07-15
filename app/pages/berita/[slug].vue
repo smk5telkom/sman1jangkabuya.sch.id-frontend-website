@@ -13,6 +13,7 @@ const { data: post, pending, error } = await useFetch(
 )
 
 const config = useRuntimeConfig()
+const reqUrl = useRequestURL()
 
 useSeoMeta({
   title: () =>
@@ -37,7 +38,7 @@ useSeoMeta({
 
   ogImage: () =>
     post.value?.imageUrl
-      ? `${config.public.backendUrl}${post.value.imageUrl}`
+      ? `${reqUrl.origin}${post.value.imageUrl}`
       : '',
 
   ogType: 'article',

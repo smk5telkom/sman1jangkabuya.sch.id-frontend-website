@@ -30,6 +30,9 @@ export default defineNuxtConfig({
       },
       '/api/alumni/**': {
         proxy: `${process.env.BACKEND_URL}/alumni/**`
+      },
+      '/uploads/**': {
+        proxy: `${process.env.BACKEND_URL}/uploads/**`
       }
     },
   },
