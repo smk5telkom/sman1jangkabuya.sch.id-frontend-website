@@ -22,6 +22,24 @@ useSeoMeta({
     post.value?.content
       ? post.value.content.substring(0, 160)
       : "Berita Sekolah - SMAN 1 Jangka Buya",
+
+  ogTitle: () =>
+    post.value?.title
+      ? `${post.value.title} - SMAN 1 Jangka Buya`
+      : "Berita Sekolah - SMAN 1 Jangka Buya",
+
+  ogDescription: () =>
+    post.value?.content
+      ? post.value.content.substring(0, 160)
+      : "Berita Sekolah - SMAN 1 Jangka Buya",
+
+  ogImage: () =>
+    post.value?.imageUrl
+      ? `${config.public.backendUrl}${post.value.imageUrl}`
+      : '',
+
+  ogType: 'article',
+  twitterCard: 'summary_large_image',
 })
 
 function formatDay(date: string) {

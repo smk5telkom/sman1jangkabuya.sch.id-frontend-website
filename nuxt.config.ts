@@ -28,8 +28,8 @@ export default defineNuxtConfig({
       '/api/achievements/': {
         proxy: `${process.env.BACKEND_URL}/achievement/`
       },
-      '/api/alumni/': {
-        proxy: `${process.env.BACKEND_URL}/alumni/`
+      '/api/alumni/**': {
+        proxy: `${process.env.BACKEND_URL}/alumni/**`
       }
     },
   },

@@ -51,7 +51,7 @@ const submitForm = async () => {
       formData.append('foto', fotoFile.value)
     }
 
-    await $fetch('/api/alumni/', {
+    await $fetch('/api/alumni', {
       method: 'POST',
       body: formData,
     })
