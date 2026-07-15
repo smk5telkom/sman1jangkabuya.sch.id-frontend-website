@@ -12,6 +12,8 @@ const { data: post, pending, error } = await useFetch(
   }
 )
 
+const config = useRuntimeConfig()
+
 useSeoMeta({
   title: () =>
     post.value?.title
@@ -54,8 +56,6 @@ function formatMonth(date: string) {
     year: 'numeric',
   }).toUpperCase()
 }
-
-const config = useRuntimeConfig()
 
 function getImageUrl(path: string) {
   if (!path) return ''
