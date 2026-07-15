@@ -1,7 +1,7 @@
 <script setup>
 useSeoMeta({
-  title: "Sejarah Sekolah - Sman 1 Jangka Buya",
-  description: "Sejarah Sekolah - Sman 1 Jangka Buya",
+  title: "Sejarah Sekolah - SMAN 1 Jangka Buya",
+  description: "Sejarah berdirinya SMAN 1 Jangka Buya sejak 2008 — jejak langkah dan perkembangan SMA Negeri di Kecamatan Jangka Buya, Kabupaten Pidie Jaya, Aceh.",
 })
 </script>
 

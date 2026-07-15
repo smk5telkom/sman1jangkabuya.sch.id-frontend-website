@@ -11,8 +11,8 @@ import { computed, ref } from 'vue'
 //   postById: number
 // }
 useSeoMeta({
-  title: "Berita Sekolah - Sman 1 Jangka Buya",
-  description: "Berita Sekolah - Sman 1 Jangka Buya",
+  title: "Berita Sekolah - SMAN 1 Jangka Buya",
+  description: "Berita dan informasi terbaru dari SMAN 1 Jangka Buya — kegiatan sekolah, prestasi siswa, dan kabar terbaru seputar SMA Negeri di Pidie Jaya.",
 })
 
 const currentPage = ref(1)

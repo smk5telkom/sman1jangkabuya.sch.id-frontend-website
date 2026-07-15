@@ -2,8 +2,8 @@
 import { ref } from 'vue'
 
 useSeoMeta({
-  title: "Pendaftaran Alumni - Sman 1 Jangka Buya",
-  description: "Pendaftaran Alumni - Sman 1 Jangka Buya",
+  title: "Pendaftaran Alumni - SMAN 1 Jangka Buya",
+  description: "Formulir pendaftaran alumni SMAN 1 Jangka Buya — mari jalin silaturahmi dan bangun relasi lintas generasi bersama keluarga besar SMA Negeri 1 Jangka Buya.",
 })
 
 const form = ref({

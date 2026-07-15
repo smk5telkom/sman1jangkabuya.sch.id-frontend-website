@@ -1,7 +1,7 @@
 <script setup>
 useSeoMeta({
-  title: "Visi & Misi - Sman 1 Jangka Buya",
-  description: "Visi & Misi - Sman 1 Jangka Buya",
+  title: "Visi & Misi - SMAN 1 Jangka Buya",
+  description: "Visi dan Misi SMAN 1 Jangka Buya — Mewujudkan siswa yang berprestasi, berakhlak mulia, dan berwawasan global.",
 })
 </script>
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: "Pengumuman Sekolah - Sman 1 Jangka Buya",
-  description: "Pengumuman Sekolah - Sman 1 Jangka Buya",
+  title: "Pengumuman Sekolah - SMAN 1 Jangka Buya",
+  description: "Pengumuman resmi SMAN 1 Jangka Buya — informasi edaran, jadwal kegiatan, pendaftaran, dan pemberitahuan penting untuk siswa dan orang tua.",
 })
 
 const currentPage = ref(1)

@@ -3,8 +3,8 @@
 import { ref, computed } from 'vue'
 
 useSeoMeta({
-  title: "Prestasi Siswa - Sman 1 Jangka Buya",
-  description: "Prestasi Siswa - Sman 1 Jangka Buya",
+  title: "Prestasi Siswa - SMAN 1 Jangka Buya",
+  description: "Prestasi siswa SMAN 1 Jangka Buya di tingkat kabupaten, provinsi, nasional, dan internasional — bangga dengan pencapaian generasi muda Pidie Jaya.",
 })
 
 const { data: achievements, pending, error } = await useFetch(

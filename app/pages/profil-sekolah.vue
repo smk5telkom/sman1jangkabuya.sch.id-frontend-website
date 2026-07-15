@@ -1,7 +1,7 @@
 <script setup>
 useSeoMeta({
-  title: "Profil Sekolah - Sman 1 Jangka Buya",
-  description: "Profil Sekolah - Sman 1 Jangka Buya",
+  title: "Profil Sekolah - SMAN 1 Jangka Buya",
+  description: "Profil lengkap SMAN 1 Jangka Buya, sekolah menengah atas unggulan di Kabupaten Pidie Jaya, Aceh. Informasi sejarah, visi misi, fasilitas, dan tenaga pendidik.",
 })
 </script>
 

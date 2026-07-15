@@ -12,6 +12,8 @@ const { data: announcement, pending, error } = await useFetch(
   }
 )
 
+const reqUrl = useRequestURL()
+
 useSeoMeta({
   title: () =>
     announcement.value?.title
@@ -22,6 +24,21 @@ useSeoMeta({
     announcement.value?.content
       ? announcement.value.content.substring(0, 160)
       : "Pengumuman Sekolah - SMAN 1 Jangka Buya",
+
+  ogTitle: () =>
+    announcement.value?.title
+      ? `${announcement.value.title} - SMAN 1 Jangka Buya`
+      : "Pengumuman Sekolah - SMAN 1 Jangka Buya",
+
+  ogDescription: () =>
+    announcement.value?.content
+      ? announcement.value.content.substring(0, 160)
+      : "Pengumuman Sekolah - SMAN 1 Jangka Buya",
+
+  ogUrl: () => announcement.value?.title ? reqUrl.href : '',
+
+  ogType: 'article',
+  twitterCard: 'summary_large_image',
 })
 
 function formatDay(date: string) {

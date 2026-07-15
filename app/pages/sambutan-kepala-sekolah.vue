@@ -1,7 +1,7 @@
 <script setup>
 useSeoMeta({
-  title: "Sambutan Kepala Sekolah - Sman 1 Jangka Buya",
-  description: "Sambutan Kepala Sekolah - Sman 1 Jangka Buya",
+  title: "Sambutan Kepala Sekolah - SMAN 1 Jangka Buya",
+  description: "Sambutan Kepala SMAN 1 Jangka Buya, Alvi Syahril B, S.Pd., M.Pd — pesan dan harapan untuk siswa, guru, dan seluruh civitas akademika.",
 })
 </script>
 

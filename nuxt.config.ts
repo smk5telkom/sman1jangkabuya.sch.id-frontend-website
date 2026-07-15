@@ -44,18 +44,17 @@ export default defineNuxtConfig({
   app: {
     head: {
       meta: [
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { name: "keywords", content: "Sman 1 Jangka Buya" },
-        {
-          name: "description",
-          content: "Sman 1 Jangka Buya",
-        },
-        { name: "author", content: "smkn5telkom.sch.id" },
         {
           name: "viewport",
           content:
             "width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no",
         },
+        { name: "keywords", content: "SMAN 1 Jangka Buya, SMA Negeri Jangka Buya, Sekolah Pidie Jaya, Pendidikan Aceh, SMA Negeri Pidie Jaya" },
+        {
+          name: "description",
+          content: "Portal resmi SMAN 1 Jangka Buya - Informasi sekolah, berita, pengumuman, prestasi, dan pendaftaran alumni SMA Negeri 1 Jangka Buya Kabupaten Pidie Jaya",
+        },
+        { name: "author", content: "SMAN 1 Jangka Buya" },
       ],
       link: [
         { rel: "shortcut icon", href: "/img/sekolah/logo.png", type: "image/x-icon" },

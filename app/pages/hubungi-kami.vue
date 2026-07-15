@@ -1,7 +1,7 @@
 <script setup>
 useSeoMeta({
-  title: "Hubungi Kami - Sman 1 Jangka Buya",
-  description: "Hubungi Kami - Sman 1 Jangka Buya",
+  title: "Hubungi Kami - SMAN 1 Jangka Buya",
+  description: "Kontak resmi SMAN 1 Jangka Buya — alamat, telepon, email, dan media sosial. Jl. Jangka Buya–Samalanga, Keude Jangka Buya, Pidie Jaya, Aceh.",
 })
 </script>
 
