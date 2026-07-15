@@ -58,8 +58,8 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-        { rel: "shortcut icon", href: "img/sekolah/logo.png", type: "image/x-icon" },
-        { rel: "apple-touch-icon", href: "img/sekolah/logo.png" },
+        { rel: "shortcut icon", href: "/img/sekolah/logo.png", type: "image/x-icon" },
+        { rel: "apple-touch-icon", href: "/img/sekolah/logo.png" },
         {
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap",

@@ -5,10 +5,10 @@ useSeoMeta({
   themeColor: "#0b1220",
   author: "Sman 1 Jangka Buya",
   ogType: "website",
-  ogUrl: "https://sman1jangkabuya.sch.id/",
+  ogUrl: "https://sman1jangkabuya.smkn5telkom.sch.id/",
   ogTitle: "Sman 1 Jangka Buya",
   ogDescription: "Sman 1 Jangka Buya - Sekolah Menengah Atas",
-  ogImage: "https://sman1jangkabuya.sch.id/img/sekolah/logo.png",
+  ogImage: "https://sman1jangkabuya.smkn5telkom.sch.id/img/sekolah/logo.png",
   ogImageWidth: 192,
   ogImageHeight: 192,
   ogImageAlt: "Sman 1 Jangka Buya Logo",
@@ -17,7 +17,7 @@ useSeoMeta({
   twitterCard: "summary_large_image",
   twitterTitle: "Sman 1 Jangka Buya",
   twitterDescription: "Sman 1 Jangka Buya - Sekolah Menengah Atas",
-  twitterImage: "https://sman1jangkabuya.sch.id/img/sekolah/logo.png",
+  twitterImage: "https://sman1jangkabuya.smkn5telkom.sch.id/img/sekolah/logo.png",
 })
 import { watch, nextTick } from 'vue'
 import { useRoute } from 'vue-router'
